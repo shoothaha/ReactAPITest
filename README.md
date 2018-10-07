@@ -22,3 +22,13 @@ if (strtoupper($_SERVER['REQUEST_METHOD'] == 'OPTIONS')) {
     exit;
 }
 ```
+#### Running
+To run this app:
+- Open terminal and enter the root directory of backend files
+- Run `php -S localhost:8000` to start the api server
+- Then open another tab of your terminal
+- Go to the `ReactAPITest` directory
+- Run `npm start` should automatically open your browser with the page, if not, [http://localhost:3000](http://localhost:3000) is the URL for this application
+
+#### PS:
+If you have errors about "eslint" version issues while running `npm start`, it's not an error that could influence the application, just a "eslint" plugin issue. You can ignore it by create a `.env` file and add `SKIP_PREFLIGHT_CHECK=true` to it, then run `npm start` again, it should works fine then. 
