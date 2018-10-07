@@ -4,7 +4,7 @@ import {
     NavItem,
     NavbarBrand,
     Navbar,
-    NavLink
+    Button
 } from 'reactstrap';
 
 class HeaderComponent extends Component {
@@ -12,13 +12,10 @@ class HeaderComponent extends Component {
         return (
             <div>
                 <Navbar color="light" light expand="md">
-                    <NavbarBrand href="/">CartonCloud</NavbarBrand>
+                    <NavbarBrand href = "/">CartonCloud</NavbarBrand>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="/components/">Deliveries</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="/components/">New Delivery</NavLink>
+                            <Button color = "primary"onClick={this.props.onClick}>Add New Delivery</Button>
                         </NavItem>
                     </Nav>
                 </Navbar>

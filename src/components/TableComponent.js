@@ -4,7 +4,7 @@ import Buttons from './ButtonComponent';
 
 class TableComponent extends Component {
     render() {
-        let deliveries = this.props.value.data;
+        let deliveries = this.props.value.deliveries;
         let drivers = this.props.value.drivers;
         return (
             <div>
@@ -26,7 +26,7 @@ class TableComponent extends Component {
                                 <td key = {i+'col1'}>{deliveries[item].date}</td>
                                 <td key = {i+'col2'}>{deliveries[item].name}</td>
                                 <td key = {i+'col3'}>{drivers[deliveries[item].driver_id].name}</td> 
-                                <td><Buttons key={i+'hello'} value={item} /></td>
+                                <td><Buttons key={i+'hello'} value={item} onClick={this.props.onClick} removeRecord = {this.props.removeRecord}/></td>
                             </tr>
                         ))}
                     </tbody>
