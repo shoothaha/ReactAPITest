@@ -23,8 +23,8 @@ export default class FormComponent extends Component {
                     <Label for="exampleSelect">Select Driver</Label>
                     <Input type="select" name="selectDriver" id="exampleSelect">
                         <option>Select a driver</option>
-                        {Object.keys(drivers).map((key, i)=>(
-                            <option key={key+"hhh"} value={key}>{drivers[key].name}</option>
+                        {Object.keys(drivers).map((driverName)=>(
+                            <option key={driverName+"driver"} value={driverName}>{drivers[driverName].name}</option>
                         ))}
                     </Input>
                 </FormGroup>

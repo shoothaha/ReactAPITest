@@ -1,10 +1,10 @@
-#React API Test
+# React API Test
 
 This is a single page CRUD react web application which renders the data from a PHP server as a table which has the CRUD functions. 
 
 This repository contains only the React part of code, to fully running this application the PHP files will be needed.
 
-####Note:
+#### Note:
 Please insert the following code block to the top of `deliveries.php` and `drivers.php` file, the purpose of the following code is to solve and avoid the CORS (cross-origin resource sharing) issues:
 ```
 $origin = $_SERVER['HTTP_ORIGIN'];

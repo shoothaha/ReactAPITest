@@ -26,7 +26,7 @@ class TableComponent extends Component {
                                 <td key = {i+'col1'}>{deliveries[item].date}</td>
                                 <td key = {i+'col2'}>{deliveries[item].name}</td>
                                 <td key = {i+'col3'}>{drivers[deliveries[item].driver_id].name}</td> 
-                                <td><Buttons key={i+'hello'} value={item} onClick={this.props.onClick} removeRecord = {this.props.removeRecord}/></td>
+                                <td><Buttons key={i+'button'} value={item} onClick={this.props.onClick} removeRecord = {this.props.removeRecord}/></td>
                             </tr>
                         ))}
                     </tbody>
